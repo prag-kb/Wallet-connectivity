@@ -58,7 +58,7 @@ function App() {
     <div className="App">
       {!logged ? (
         <div>
-          <div>Log in with Phantom Wallet</div>
+          <div className="underline font-bold">Log in with Phantom Wallet</div>
           <button onClick={handleLogin}>Log In</button>
         </div>
       ) : (
