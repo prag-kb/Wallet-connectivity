@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { Connection, PublicKey } from "@solana/web3.js";
 
-function App() {
-  const [logged, setIsLogged] = useState(false);
+function Wallet() {
+  const [logged, setIsLogged] = useState<Boolean>(false);
   const [accountDetails, setAccountDetails] = useState(null);
   const [balance, setBalance] = useState("");
   const forwarderOrigin = "http://localhost:3000";
@@ -55,7 +55,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div >
       {!logged ? (
         <div>
           <div className="underline font-bold">Log in with Phantom Wallet</div>
@@ -74,5 +74,5 @@ function App() {
   );
 }
 
-export default App;
+export default Wallet;
 
